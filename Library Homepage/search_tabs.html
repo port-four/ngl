@@ -1,0 +1,214 @@
+<!--<div class="callout orange">
+    The Library Catalog will be down Saturday, 1/7/2023, but Articles &amp More will be up.
+</div>-->
+<ul class="tabs" data-tabs id="frontpagetabs">
+  <li class="tabs-title is-active"><a href="#frontmenu-panel2-1" aria-selected="true">Engine Orange</a></li>
+  <li class="tabs-title"><a data-tabs-target="frontmenu-panel2-3" href="#frontmenu-panel2-3">Articles &amp; More</a></li>
+</ul>
+<div class="tabs-content" data-tabs-content="frontpagetabs">
+  <div class="tabs-panel is-active" id="frontmenu-panel2-1"> <!-- Engine Orange Tab -->
+    <p>Find books, articles, films, and MORE in the catalog and selected databases.</p>
+		<!-- EBSCOhost Custom Search Box Begins -->
+		<form action="/scripts/nglsearch.html" method="post" id="search_engineorange">
+      <input name="widget" value="engineorange" type="hidden" />
+      <div class="grid-x grid-padding-x">
+        <div class="cell auto">
+          <label for="ebscohostsearchtext" class="off-screen">Search</label>
+          <input type="text" name="ebscohostsearchtext" id="ebscohostsearchtext" size="25" maxlength="255" /> 
+        </div>
+        <div class="cell shrink">
+          <input type="submit" value="Search" class="button" />
+        </div>
+      </div>
+      <div class="grid-x">
+        <div class="cell medium-5 hide-for-small-only">
+          <img src="/images/EngineOrange_homepagetab_2017.png" alt="Engine Orange logo" style="float: right; padding-right: 2rem;">
+        </div>
+        <div class="cell small-12 medium-7">
+          <div role="radiogroup" aria-label="Engine Orange search field selectors">
+            <p style="padding-top: .65rem;">
+              <input type="radio" name="searchFieldSelector" id="guidedField_0" value="" checked="checked" />
+              <label for="guidedField_0">Keyword</label>
+              <input type="radio" name="searchFieldSelector" id="guidedField_1" value="TI" />
+              <label for="guidedField_1">Title</label>
+              <input type="radio" name="searchFieldSelector" id="guidedField_2" value="AU" />
+              <label for="guidedField_2">Author</label>
+              <br/>
+              <input type="radio" name="searchFieldSelector" id="guidedField_3" value="PUB" />
+              <label for="guidedField_3">Journal/Publication Name</label>
+            </p>
+          </div>
+        </div>
+      </div>
+    </form>
+    <!-- EBSCOhost Custom Search Box Ends -->
+    <p><a href="https://ezproxy.shsu.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;setup=1&amp;site=eds">Advanced Search in Engine Orange</a> | 
+    <a href="https://ezproxy.shsu.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&db=edspub&profile=eds&plp=1">Search for Journal Titles</a></p>
+    <p style="text-align: right;"><a href="https://shsulibraryguides.org/engineorange"><em>What is Engine Orange and how do I use it?</em></a></p>
+  </div> <!-- End of Engine Orange Tab -->
+  <div class="tabs-panel" id="frontmenu-panel2-2"> <!-- Books & Media Tab -->
+    <p>Search for books and more in the library catalog.</p>
+    <form name="formCat" action="https://unicorn.shsu.edu/uhtbin/cgisirsi/x/0/0/57/5?" method="get" id="search_catalog">
+		<input name="user_id" value="WEBSERVER" type="hidden">
+    <div class="grid-x grid-padding-x">
+      <div class="cell small-12 medium-7">
+        <label for="searchdata1" class="off-screen">Search the Library Catalog</label>
+        <input name="searchdata1" id="searchdata1" size="55" maxlength="255" type="text">
+      </div>
+      <div class="cell small-8 medium-3">
+        <label for="srchfield1" class="off-screen">Search fields</label>
+        <select name="srchfield1" id="srchfield1">
+          <option value="GENERAL^SUBJECT^GENERAL^^words or phrase">Keyword</option>
+          <option value="AU^AUTHOR^AUTHORS^Author Processing^author">Author</option>
+          <option value="TI^TITLE^TITLES^Title Processing^title">Title</option>
+          <option value="SU^SUBJECT^SUBJECTS^^subject">Subject</option>
+          <option value="SER^SERIES^SERIES^Title Processing^series">Series Title</option>
+          <option value="^ISBN">ISBN</option>
+          <option value="PER^PERTITLE^GENERAL^Title Processing^periodical title">Periodical Title</option>
+        </select>
+        <input name="sort_by" value="-PBYR" type="hidden">
+      </div>
+      <div class="cell small-4 medium-2">
+        <input name="submitCat" value="Search" type="submit" class="button">
+      </div>
+    </div>
+    <div role="radiogroup" aria-label="Book search item type selectors"><p style="padding-left: 1rem;">
+      <input name="item_type" value="" id="item_type_0" checked="checked" type="radio">
+      <label for="item_type_0">All</label>
+      <input name="item_type" value="EBOOK" id="item_type_1" type="radio">
+      <label for="item_type_1">Ebooks Only</label>
+      <span class="linewrap">
+        <input name="item_type" value="EVIDEO" id="item_type_2" type="radio">
+        <label for="item_type_2">Online Videos Only</label>
+      </span>
+    </p></div>
+    </form>
+    <p><a href="https://unicorn.shsu.edu/uhtbin/cgisirsi/x/0/0/49">Advanced Search in Catalog</a> | 
+    <a href="/research/reserves.html">Course Reserves</a> | 
+    <a href="https://shsulibraryguides.org/film">View all Video Collections</a></p>
+  </div> <!-- End of Books & Media Tab -->
+  <div class="tabs-panel" id="frontmenu-panel2-3"> <!-- Articles & More Tab -->
+    <form name="quicklinks" action="">
+      <div class="grid-x grid-padding-x">
+        <div class="cell small-12 medium-4">
+          <strong><span id="dbquick">Database QuickLinks</span>:</strong>
+        </div>
+        <div class="cell small-9 medium-6">
+          <select name="databases" id="databases" aria-labelledby="dbquick">
+            <option value="https://ezproxy.shsu.edu/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=psyh" selected="selected">PsycINFO</option>
+            <option value="https://ezproxy.shsu.edu/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=bsi&defaultdb=buh" >Business Source Complete</option>
+						<option value="https://ezproxy.shsu.edu/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=ccm">CINAHL Complete</option>
+						<option value="https://ezproxy.shsu.edu/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=cja">Criminal Justice Abstracts</option>
+            <option value="https://ezproxy.shsu.edu/login?url=https://www.jstor.org/action/showAdvancedSearch">JSTOR</option>
+            <option value="https://ezproxy.shsu.edu/login?url=https://1.next.westlaw.com/Search/Home.html?rs=IWLN1.0&vr=3.0&sp=000040485-2100&forcecdn=false&bhskip=1">Westlaw NEXT</option>
+            <option value="https://ezproxy.shsu.edu/login?url=http://firstsearch.oclc.org/autho=100-146-074;dbname=WorldCat;done=referer;FSIP">WorldCat (FirstSearch)</option>
+          </select>
+        </div>
+        <div class="cell small-3 medium-2">
+          <input name="Button1" value="Go" onclick="location=document.quicklinks.databases.options[document.quicklinks.databases.selectedIndex].value;" type="button" class="button" id="search_dbquicklinks">
+        </div>
+      </div>
+    </form>
+    <p><a href="https://shsulibraryguides.org/az.php">All Databases A-Z</a></p>
+    <p><strong>Databases By Subject:</strong></p>
+    <div class="grid-x grid-padding-x">
+      <div class="cell medium-4">
+        <a href="https://shsulibraryguides.org/c.php?g=86701&p=558025">Agriculture</a><br>
+        <a href="https://shsulibraryguides.org/c.php?g=86735&p=558379">Art</a><br>
+        <a href="https://shsulibraryguides.org/c.php?g=86708&p=558800">Biography</a><br>
+        <a href="https://shsulibraryguides.org/c.php?g=86711&p=558274">Biology</a><br>
+        <a href="https://shsulibraryguides.org/busdb">Business</a><br>
+        <a href="https://shsulibraryguides.org/c.php?g=86714&p=557941">Chemistry</a><br>
+        <a href="https://shsulibraryguides.org/c.php?g=86745&p=558750">Communication</a><br>
+        <a href="https://shsulibraryguides.org/csdb">Computer Science</a><br>
+        <a href="https://shsulibraryguides.org/c.php?g=86696&p=558523">Criminal Justice</a> / <a href="https://shsulibraryguides.org/legal">Law</a><br>              
+        <a href="https://shsulibraryguides.org/currentdb">Current Events</a><br>
+        <a href="https://shsulibraryguides.org/c.php?g=86765&p=558834">Dance</a><br>
+        <a href="https://shsulibraryguides.org/stats">Datasets</a><br>
+      </div>
+      <div class="cell medium-4">
+        <a href="https://shsulibraryguides.org/c.php?g=86775&p=1442584">Ebooks</a><br>
+        <a href="https://shsulibraryguides.org/busdb/econ">Economics</a><br>
+        <a href="https://shsulibraryguides.org/education">Education</a> / <a href="https://shsulibraryguides.org/counselored">Counselor Education</a><br>
+        <a href="https://shsulibraryguides.org/c.php?g=839406&p=5996438">Engineering Technology</a><br>
+        <a href="https://shsulibraryguides.org/engdb">English</a><br>
+        <a href="https://shsulibraryguides.org/c.php?g=86740&p=558289">Environmental and Geosciences</a><br>
+        <a href="https://shsulibraryguides.org/c.php?g=546126&p=4180744">Foreign Languages</a><br>
+        <a href="https://shsulibraryguides.org/fsdb">Forensic Science</a><br>
+        <a href="https://shsulibraryguides.org/govdocdb">Government Documents</a><br>
+        <a href="https://shsulibraryguides.org/historydatabases">History</a><br>
+        <a href="https://shsulibraryguides.org/c.php?g=86719&p=558840">Kinesiology</a><br>
+        <a href="https://shsulibraryguides.org/c.php?g=86852&p=558281">Library Science</a><br>
+      </div>
+      <div class="cell medium-4">
+				<a href="https://shsulibraryguides.org/MassComm">Mass Communication</a><br>
+        <a href="https://shsulibraryguides.org/c.php?g=86703&p=558371">Mathematics</a><br>
+        <a href="https://shsulibraryguides.org/c.php?g=86743&p=2282030">Music</a><br>
+        <a href="https://shsulibraryguides.org/newsdb">Newspapers</a><br>
+        <a href="https://shsulibraryguides.org/c.php?g=86781&p=558609">Nursing</a><br>
+				<a href="https://shsulibraryguides.org/com">Osteopathic Medicine</a><br>
+        <a href="https://shsulibraryguides.org/c.php?g=86717&p=558535">Physics</a><br>
+        <a href="https://shsulibraryguides.org/c.php?g=86705&p=558701">Political Science</a><br>
+        <a href="https://shsulibraryguides.org/psychology/db">Psychology</a><br>
+        <a href="https://shsulibraryguides.org/refdb">Reference</a><br>
+        <a href="https://shsulibraryguides.org/socdb">Sociology</a><br>
+        <a href="https://shsulibraryguides.org/c.php?g=86755&p=558348">Theatre / Drama</a><br>
+        <a href="https://shsulibraryguides.org/film">Videos / Films Online</a><br>
+      </div>
+    </div>
+    <p>&nbsp;</p>
+    <p><img src="https://scholar.google.com/intl/en/scholar/images/1x/scholar_logo_24dp.png" alt="Google Scholar" style="border:none;">
+    -- Search articles, documents, books, etc. (includes legal opinions &amp; journals). Link to full text if owned by SHSU ("Online Resources @ SHSU").</p>
+    <form action="https://scholar.google.com/scholar" method="get" name="q" id="search_googlescholar">
+      <input type="hidden" name="inst" value="4784870983993927033" />
+      <div class="grid-x grid-padding-x">
+        <div class="cell auto">
+          <label for="GScholar" class="off-screen">Search Google Scholar</label>
+          <input name="q" id="GScholar" size="55" maxlength="255" type="text">
+        </div>
+        <div class="cell shrink">
+          <input type="submit" value="Search" class="button">
+        </div>
+      </div>
+    </form>
+    <p>Link your Google account to SHSU, so the "<strong>Online Resources @ SHSU</strong>" links will always appear – even if you don’t start your search from this page. <a href="https://scholar.google.com/scholar_setprefs?instq=Sam%20Houston%20State%20University" target="_blank">Go to our customized settings screen</a>, click the checkbox, and click Save. If you’re logged into a Google account, it will remember that setting from now on.</p>
+    <p style="text-align: right;"><a href="/research/guides/tutorials/googlescholar/index.html"><em>What is Google Scholar and how do I use it?</em></a></p>
+  </div> <!-- End of Articles & More Tab -->
+</div>
+<style>
+	.tabs {
+		background-color: transparent;
+		border: none;
+		margin-left: 1px;
+	}
+	.tabs-title > a:focus, .tabs-title > a[aria-selected="true"] {
+		background-color: #004990;
+		border-left: 1px solid #004990;
+		border-bottom: 1px solid #004990;
+		color: #fff;
+	}
+	.tabs-title > a {
+		background-color: #E9EAF5;
+		border-left: 1px solid #efefef;
+		border-radius: .25rem .25rem 0 0;
+		text-decoration: none !important;
+		font-size: 1rem;
+	}
+	.tabs-content > .tabs-panel {
+		background-color: #F4F4F9; 
+		border-color: #004990;
+		border-width: 12px 1px 1px;
+		border-style: solid;
+		padding: 1.25rem;
+	}
+	@media screen and (max-width: 640px) {
+		.tabs-title > a {
+			padding: .6rem .5rem;
+			font-size: .7rem;
+		}
+		.linewrap::before {
+			content: '';
+			display: block;
+		}
+	}
+</style>
