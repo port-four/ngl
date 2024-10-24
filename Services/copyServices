@@ -1,6 +1,6 @@
 <p><strong>Location: </strong>Newton Gresham Library, Room 103<br/>
 <strong>Phone:</strong> 936-294-3551
-<strong>Email:</strong> <a href="mailto:lib_copy@shsu.edu">lib_copy@shsu.edu</a></p>
+<!--<strong>Email:</strong> <a href="mailto:lib_copy@shsu.edu">lib_copy@shsu.edu</a></p>-->
 <h2>Hours of Operation</h2>
 <p>The Library Copy Services opens at the same time as the Library and closes 30 minutes before the Library. </p>
 <p><a href="/about/hours.html">View regular Library hours</a>.</p>
@@ -24,7 +24,7 @@
 <ul>
 <li>Pay for a poster made by the Library's Systems Office</li>
 <li><strong><a href="/services/techshop.html">View poster-printing and technology services with pricing from the Systems Office</a>.</strong></li>
-    <li>Thesis copying and binding are no longer provided by Copy Services. To inquire about digitization of an SHSU thesis/dissertation, please contact <a href="mailto:sge004@shsu.edu">Digital Initiatives</a>.</li>
+    <li>Thesis copying and binding are no longer provided by Copy Services. To inquire about digitization of an SHSU thesis/dissertation, please contact <a href="mailto:DigitalCollections@shsu.edu">Digital Initiatives</a>.</li>
 </ul>
 <h2>Prices<a id="prices" name="prices"></a></h2>
 <p><strong>State and local sales tax will be added to the total cost of all services.</strong></p>
@@ -38,8 +38,8 @@
         </ul>
     <li>B &amp; W Transparencies: $1.00 per transparency</li>
     <li>Color Transparencies: $3.00 per transparency</li>
-    <li>Cover Bind: $2.00</li>
-    <li>Lamination: $0.75 for letter size, $1.00 for legal size, &amp; $3.00 for ledger size</li>
+    <li>Spiral Bind: $3.50</li>
+    <li>Lamination: $0.75 for letter size, $1.00 for legal size, &amp; $5.00 for ledger size</li>
 </ul>
 <br />
 <ul>
@@ -56,7 +56,7 @@
 <ul>
 <li>Computer Print Jobs: $0.25 per page
 <ul>
-<li><span style="color:red;"><b>NEW!</b></span> <a href="https://shsu.libwizard.com/f/print">Submit print jobs online</a></li>
+<li><a href="https://shsu.libwizard.com/f/print">Submit print jobs online</a></li>
 <li>To request print jobs in person: Please save your item onto a flash drive in PDF format. Student workers / copy-room staff are available to help with this step if needed.</li>
 </ul>
 </li>
